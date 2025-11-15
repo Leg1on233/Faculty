@@ -1,0 +1,452 @@
+/* Базові стилі для всіх сторінок */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Навігація */
+.main-nav {
+    background: #4A7C2C !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.logo-emblem {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-emblem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo-text h1 {
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.logo-text p {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 22px 35px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: #3a6122;
+    color: #000;
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #3a6122;
+    min-width: 300px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 1rem;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background: #2d4a1a;
+    color: #000;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Контент */
+.main-content {
+    min-height: 600px;
+    padding-bottom: 50px;
+}
+
+.page-header {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #4A7C2C;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.breadcrumbs {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    color: #4A7C2C;
+    cursor: pointer;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* Футер */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    margin-top: 80px;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+}
+
+.footer-contacts {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-contacts h3 {
+    color: #4A7C2C;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contacts-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contacts-inline span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Модальне вікно для зображень */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    animation: fadeIn 0.3s ease;
+}
+
+.image-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content-wrapper {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    color: #4A7C2C;
+    transform: rotate(90deg);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-container {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    
+    .logo {
+        flex: 1;
+        gap: 10px;
+    }
+    
+    .logo-emblem {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo-text h1 {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+    
+    .logo-text p {
+        font-size: 0.6rem;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        order: 2;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        order: 3;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 15px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        display: none;
+        min-width: 100%;
+    }
+    
+    .dropdown-menu a {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .has-dropdown:hover .dropdown-menu {
+        display: none;
+    }
+    
+    .page-header {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    
+    .breadcrumbs {
+        font-size: 0.8rem;
+    }
+    
+    .footer {
+        margin-top: 40px;
+    }
+    
+    .footer-bottom {
+        padding: 15px 0;
+    }
+    
+    .footer-contacts h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .contacts-inline {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 10px;
+    }
+    
+    .contacts-inline span {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .copyright {
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+
+    .modal-content-wrapper {
+        max-width: 95%;
+    }
+
+    .modal-close {
+        top: -35px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text h1 {
+        font-size: 0.75rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.55rem;
+    }
+}

@@ -1,0 +1,384 @@
+/* Стилі для сторінки "Про факультет" */
+
+.about-content {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.text-block {
+    margin-bottom: 40px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #4A7C2C;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.text-block p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Спеціальності */
+.specialties-section {
+    margin: 50px 0;
+}
+
+.specialties-section h2 {
+    font-size: 2rem;
+    color: #4A7C2C;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.specialty-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.specialty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.specialty-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.specialty-card h3 {
+    color: #4A7C2C;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.specialty-desc {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.specialty-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #4A7C2C;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.specialty-btn:hover {
+    background: #3a6122;
+    transform: translateX(5px);
+}
+
+/* Галереї фото */
+.gallery-section {
+    margin: 50px 0;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    color: #4A7C2C;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.photo-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.gallery-container {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-slide {
+    min-width: calc(40% - 10px);
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-slide:hover {
+    transform: scale(1.05);
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-nav {
+    background: #4A7C2C;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.gallery-nav:hover {
+    background: #3a6122;
+    transform: scale(1.1);
+}
+
+/* Розділювач */
+.section-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #4A7C2C, transparent);
+    margin: 50px 0;
+}
+
+/* Відео секція */
+.video-section {
+    margin: 50px 0;
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    color: #4A7C2C;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Акордеон */
+.accordion-section {
+    margin: 50px 0;
+}
+
+.accordion-section h2 {
+    font-size: 2rem;
+    color: #4A7C2C;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.ui-accordion .ui-accordion-header {
+    background: #4A7C2C;
+    color: white;
+    border: none;
+    margin-bottom: 5px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ui-accordion .ui-accordion-header:hover {
+    background: #3a6122;
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active {
+    background: #3a6122;
+    color: white;
+}
+
+.ui-accordion .ui-accordion-content {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Адаптивність */
+@media (max-width: 992px) {
+    .specialties-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px 15px;
+    }
+    
+    .text-block {
+        margin-bottom: 30px;
+    }
+    
+    .lead {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    
+    .text-block p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+    
+    .specialties-section {
+        margin: 30px 0;
+    }
+    
+    .specialties-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    
+    .specialties-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .specialty-card {
+        padding: 25px 20px;
+    }
+    
+    .specialty-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .specialty-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .specialty-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    
+    .specialty-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-section {
+        margin: 30px 0;
+    }
+    
+    .gallery-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    
+    .photo-gallery {
+        gap: 10px;
+    }
+    
+    .gallery-slide {
+        min-width: 85%;
+        height: 220px;
+    }
+    
+    .gallery-nav {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+    
+    .video-section {
+        margin: 30px 0;
+    }
+    
+    .video-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    
+    .accordion-section {
+        margin: 30px 0;
+    }
+    
+    .accordion-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .ui-accordion .ui-accordion-header {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+    
+    .ui-accordion .ui-accordion-content {
+        padding: 15px;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        padding: 15px 10px;
+    }
+    
+    .lead {
+        font-size: 0.95rem;
+    }
+    
+    .text-block p {
+        font-size: 0.85rem;
+    }
+    
+    .gallery-slide {
+        min-width: 90%;
+        height: 200px;
+    }
+}
