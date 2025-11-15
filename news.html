@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини - Факультет ІТ ВВНЗ</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base-styles.css">
+    <link rel="stylesheet" href="css/news-styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-emblem">
+                    <img src="photos/logo.png" alt="Логотип" width="100" height="100">
+                </div>
+                <div class="logo-text">
+                    <h1>Факультет інформаційних технологій</h1>
+                    <p>Військовий інститут телекомунікацій та інформатизації імені Героїв Крут</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Головна</a></li>
+                <li class="has-dropdown">
+                    <a href="about.html">Про факультет</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computer-science.html">Комп'ютерні науки</a></li>
+                        <li><a href="information-systems.html">Інформаційні системи та технології</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html" class="active">Новини</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Новини факультету</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Головна</a> / Новини
+                </div>
+            </div>
+            <div class="news-grid" id="allNews"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-contacts">
+                    <h3>Контакти</h3>
+                    <div class="contacts-inline">
+                        <span>📍 м. Київ, вул. Князів Острозьких 45/1</span>
+                        <span>📞 +380 (99) 429-22-32</span>
+                        <span>✉️ it-faculty@mil.gov.ua</span>
+                        <span>🕒 Пн-Пт: 09:00 - 18:00</span>
+                    </div>
+                </div>
+                <p class="copyright">&copy; 2025 Факультет №2 "Інформаційних технологій" ВІТІ. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

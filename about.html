@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про факультет - Факультет ІТ ВВНЗ</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base-styles.css">
+    <link rel="stylesheet" href="css/about-styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-emblem">
+                    <img src="photos/logo.png" alt="Логотип" width="100" height="100">
+                </div>
+                <div class="logo-text">
+                    <h1>Факультет інформаційних технологій</h1>
+                    <p>Військовий інститут телекомунікацій та інформатизації імені Героїв Крут</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Головна</a></li>
+                <li class="has-dropdown">
+                    <a href="about.html" class="active">Про факультет</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="computer-science.html">Комп'ютерні науки</a></li>
+                        <li><a href="information-systems.html">Інформаційні системи та технології</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Про факультет інформаційних технологій</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Головна</a> / Про факультет
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="text-block">
+                    <p class="lead">Факультет інформаційних технологій ВВНЗ є провідним навчальним підрозділом, що готує висококваліфікованих військових фахівців у галузі інформаційних технологій.</p>
+                    <p>Наша місія полягає в забезпеченні Збройних Сил України компетентними спеціалістами, здатними вирішувати складні завдання в сфері кібербезпеки, розробки програмного забезпечення та адміністрування інформаційних систем. Факультет орієнтується на сучасні стандарти військової освіти та інформаційної безпеки, поєднуючи фундаментальну підготовку з практичною складовою. Велика увага приділяється розвитку аналітичного мислення, лідерських якостей та вмінню працювати в умовах реальних бойових і технічних викликів. Випускники факультету впевнено реалізують себе у підрозділах Збройних Сил, державних структурах та у сфері оборонних технологій, роблячи внесок у зміцнення інформаційної безпеки України.</p>
+                </div>
+
+                <div class="specialties-section">
+                    <h2>Спеціальності факультету</h2>
+                    <div class="specialties-grid">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">💻</div>
+                            <h3>Комп'ютерні науки</h3>
+                            <p class="specialty-desc">Підготовка фахівців у галузі розробки програмного забезпечення, штучного інтелекту та кібербезпеки</p>
+                            <a href="computer-science.html" class="specialty-btn">Детальніше →</a>
+                        </div>
+                        <div class="specialty-card">
+                            <div class="specialty-icon">🌐</div>
+                            <h3>Інформаційні системи та технології</h3>
+                            <p class="specialty-desc">Підготовка фахівців у галузі проектування, впровадження та адміністрування інформаційних систем та комп'ютерних мереж</p>
+                            <a href="information-systems.html" class="specialty-btn">Детальніше →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>Навчальна та наукова діяльність факультету</h2>
+                    <div class="photo-gallery" id="gallery1">
+                        <button class="gallery-nav gallery-prev">&lt;</button>
+                        <div class="gallery-container">
+                            <div class="gallery-track">
+                                <div class="gallery-slide"><img src="photos/photo15.png" alt="Досягнення 1"></div>
+                                <div class="gallery-slide"><img src="photos/photo16.png" alt="Досягнення 2"></div>
+                                <div class="gallery-slide"><img src="photos/photo17.png" alt="Досягнення 3"></div>
+                                <div class="gallery-slide"><img src="photos/photo18.png" alt="Досягнення 4"></div>
+                                <div class="gallery-slide"><img src="photos/photo19.png" alt="Досягнення 5"></div>
+                            </div>
+                        </div>
+                        <button class="gallery-nav gallery-next">&gt;</button>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>Навчальні аудиторії</h2>
+                    <div class="photo-gallery" id="gallery2">
+                        <button class="gallery-nav gallery-prev">&lt;</button>
+                        <div class="gallery-container">
+                            <div class="gallery-track">
+                               <div class="gallery-slide"><img src="photos/photo21.jpeg" alt="Аудиторія 1"></div>
+                                <div class="gallery-slide"><img src="photos/photo23.jpeg" alt="Аудиторія 2"></div>
+                                <div class="gallery-slide"><img src="photos/photo22.jpeg" alt="Аудиторія 3"></div>
+                                <div class="gallery-slide"><img src="photos/photo20.jpeg" alt="Аудиторія 4"></div>
+                                <div class="gallery-slide"><img src="photos/photo24.jpeg" alt="Аудиторія 5"></div>
+                            </div>
+                        </div>
+                        <button class="gallery-nav gallery-next">&gt;</button>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>Наші досягнення</h2>
+                    <div class="photo-gallery" id="gallery3">
+                        <button class="gallery-nav gallery-prev">&lt;</button>
+                        <div class="gallery-container">
+                            <div class="gallery-track">
+                                <div class="gallery-slide"><img src="photos/photo27.png" alt="Досягнення 1"></div>
+                                <div class="gallery-slide"><img src="photos/photo26.jpeg" alt="Досягнення 2"></div>
+                                <div class="gallery-slide"><img src="photos/photo25.jpeg" alt="Досягнення 3"></div>
+                                <div class="gallery-slide"><img src="photos/photo28.jpeg" alt="Досягнення 4"></div>
+                                <div class="gallery-slide"><img src="photos/photo29.jpeg" alt="Досягнення 5"></div>
+                            </div>
+                        </div>
+                        <button class="gallery-nav gallery-next">&gt;</button>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="video-section">
+                    <h2>Відео про факультет</h2>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/7Mrn95K-chM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <h2>Матеріально-технічна база</h2>
+                    <div id="accordion"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-contacts">
+                    <h3>Контакти</h3>
+                    <div class="contacts-inline">
+                        <span>📍 м. Київ, вул. Князів Острозьких 45/1</span>
+                        <span>📞 +380 (99) 429-22-32</span>
+                        <span>✉️ it-faculty@mil.gov.ua</span>
+                        <span>🕒 Пн-Пт: 09:00 - 18:00</span>
+                    </div>
+                </div>
+                <p class="copyright">&copy; 2025 Факультет №2 "Інформаційних технологій" ВІТІ. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
